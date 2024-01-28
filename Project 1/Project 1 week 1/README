@@ -1,0 +1,7 @@
+How to run:
+Download the MATLAB code. 
+Download the Simulink Block 
+Open both files.
+Run the file in the MATLAB code
+13 graphs will be made, the last one can be cancelled out
+The graphs are a straight line because according to the EOM, the damping torque cancels the input torque causing there to be zero angular accelaration and angular velocity. 
