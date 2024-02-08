@@ -1,2 +1,0 @@
-The current MATLAB code that we have uploaded here creates 250001 graphs. This is because the size of the W_DOT is 250001x1. We are working on fixing it but we seem to fall short of it today. This could be 
-changed with minor changes on the for loop. We have added and captured all the variables. 
