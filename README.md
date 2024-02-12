@@ -3,6 +3,4 @@ The Simulink one has a 97% but I have done the whole thing. it would not allow m
 I will attach a screenshot of the completed block diagram in Simulink here too. 
 
 Outputs:
-394 plots for angular velocity 
-394 for simulation time 
-Error in matlab not included to plots
+394 plots for angular velocity, 394 for simulation time, Error in matlab not included to plots
