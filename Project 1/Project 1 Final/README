@@ -1,5 +1,0 @@
-For part 1 of the project, utilize project1_week3_sim.slx
-We have 384 plots for omega, 192 plots for cpu time, and we have the expression for error calculated in the matlab. However, we could not finish plotting it.
-For part 2 of the project, use project1_final.slx
-We did not understand what tau_L was when using option 1. So, we hardcoded a random number as an input to out stiffness block in simulink
-
