@@ -19,3 +19,6 @@ does not create the required trace. The same is said for the rotate function. We
 out a way to assimilate the program in the demos file to our file. As for running our file, 
 downloading and clicking run would be the best way. It is pretty straigtforward since it does not 
 link any Simulink files. 
+
+## Week 1 Feedback (5/5)
+Good job Team 6! Other than the issue of the patch not following the generated track, the rest of this weeks submission looks good just make sure to get that issue fixed.  For Week 2, start developing a lateral dynamic model of a vehicle that contains subsystems that are listed in the Week 2 document.
