@@ -24,7 +24,7 @@ y2 = radius * sin(theta2) - radius;
 
 % Define the straight sections  
 
-x3 = linspace(-straight_length/2, straight_length/2, num_points);  
+x3 = linspace(straight_length/2, -straight_length/2, num_points);  
 
 y3 = ones(1, num_points) * radius;  
 
