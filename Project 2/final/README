@@ -1,5 +1,23 @@
 Week 3 Project Two Report:
 
-In Project Two, the deliverables were to utilize MATLAB and Simulink to develop a race car around a track with two curves and two straights forming a NASCAR-like track. Developing our "lateral dynamic" and "Driver" systems in Simulink, our race car was able to navigate the track created. In our work in week 1, our track did not perform well enough. As a result, we started our track from scratch by dividing it into four sections. After completing this, we added the "Driver" and " Lateral dynamic" codes to the Simulink. Developing these, we ran into more issues regarding the track path and the Simulink was generating more errors.
+Project 2 required the simulation of the a race car along a track with two straight sections and one
+curved section. The first week required the creation of the track and the vehicle. We were able to create 
+the track and vehicle to move along the track, however, it was not rotating and it kept bouncing between
+the straight lines. 
 
-In Week 3, we incorporated the "raceStat" and "init" files to provide the vehicle's statistics. Using these statistics, we improved the Simulink performance where the car ran through the track while rotating with less errors.
+We fixed this issue by week 2. However, the created track quickly was deemed unsuitable for the 
+week 2 deliverables. Hence, we divided up the track into four sectors and rotated the car using a 
+different rotate function at the end of the code. This allowed us to refer to the simulink data that 
+we needed without issue. We then created the Simplest Driver MATLAB code with just three inputs that 
+estimated the lateral velocity and heading using k and the equation for psi. The desired velocity was 
+calibrated using the lateral dynamics subsystem and the rotation/transform function was incorporated 
+to get the values in the XY graph. 
+
+In week 3, we added the raceStat.m files. We apologize for the weird file name, however, we had a habit
+of putting the values in teams, downloading each others code to see which works best. Hence, the name
+was used to distinguish the files and time constraints held us back from changing the name again before
+uploading. We do wish to make some changes and upload it again since the current file provides 
+an incomplete track although it completes the track in the fastest time. 
+
+To run the file, download each files and run 'init.m' first, followed by the others. 
+
