@@ -1,2 +1,2 @@
-Project Week 1:
+Project 3 Week 1:
 
