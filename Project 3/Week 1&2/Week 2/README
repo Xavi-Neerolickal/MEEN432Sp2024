@@ -1,0 +1,16 @@
+Make sure that the files for week 1 and 2 are stored in seperate folders and run seperately. The names of the files might be same but the content in most of them, especially the simulink have changed. 
+So, it might cause troubles otherwise. The instructions remain the same for now but there are changes. So do make sure that they are stored in seperate folders
+
+How to Run:
+1. Download all the init files and .slx files
+2. Run all the init files
+3. Open the simulink file, go to driver schedule, click on EPA_table and change the Table Data parameter to: UrbanDriveData
+4. Open the simulink file, go to driver schedule, click on EPA_table and change the Breakingpoints 1 parameter to: UrbanTime
+5. Run the simulink file
+6. Run p3_runsim. This will provide the graph for urban driving which currently show a straight line
+7. clf
+8. Open the simulink file, go to driver schedule, click on EPA_table and change the Table Data parameter to: HighwayDriveData
+4. Open the simulink file, go to driver schedule, click on EPA_table and change the Breakingpoints 1 parameter to: HighwayTime
+5. Run the simulink file
+6. Run p3_runsim_highway. This will provide the graph for highway driving urban driving which also currently shows a straight line
+7. clf
