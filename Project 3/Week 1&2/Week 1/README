@@ -10,7 +10,7 @@ How to Run:
 6. Run p3_runsim. This will provide the graph for urban driving
 7. clf
 8. Open the simulink file, go to driver schedule, click on EPA_table and change the Table Data parameter to: HighwayDriveData
-4. Open the simulink file, go to driver schedule, click on EPA_table and change the Breakingpoints 1 parameter to: HighwayTime
-5. Run the simulink file
-6. Run p3_runsim_highway. This will provide the graph for highway driving
-7. clf
+9. Open the simulink file, go to driver schedule, click on EPA_table and change the Breakingpoints 1 parameter to: HighwayTime
+10. Run the simulink file
+11. Run p3_runsim_highway. This will provide the graph for highway driving
+12. clf
