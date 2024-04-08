@@ -1,1 +1,22 @@
 How to Run:
+1. Download every file in Week 3
+2. The files without '_Highway' for runsim and the simulink are for the Urban Data
+3. Run all the init files
+4. Run the normal p3_w3_car Simulink file
+5. Run the normal p3_runsim MATLAB file
+6. Run the p3_w3_Highwy simulink file
+7. Run the p3_runsim_Highway file
+8. Should produce the graphs for each with regenerative breaking applied.
+
+Work Done:
+1. Created the battery that outputs the state of charge and voltage from the current as the input function
+using capacitance and internal resistance along with OCV values. The power loss and energy loss are 
+put to workspace in the simulink file. The delays were placed appropriately for it to run
+2. Created the Electric motor that takes in APP, motor speed and Bus voltage to output the motor torque,
+motor intertia nd current of the bus channel.This was achieved by using the motor torque and efficiency
+arrays. Appropriate delays were placed after the current generation function. The motor energy and 
+power and outputted to the workspace inside this subsystem. 
+3. Applied regenerative breaking of 0.1 inside the Driver function. The APP% of breaking was reduced by 
+0.1 and added to the APP of torque/throttle. 
+4. The Drive function multiplied the input functions by final drive gear ration (FDG) as required 
+to produce the needed outputs. 
