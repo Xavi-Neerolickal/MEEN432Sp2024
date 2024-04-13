@@ -1,13 +1,13 @@
 % Initializing values for the project as provided
 
-w_0 = [0,10]; % Initial Angular Velocity [rad/s]
-J = [.01,100]; % Rotational Inertia [kg-m^2]
-b = [.1,10]; % Damping Coefficient [N-m-s/rad]
-A = [0,100]; % Constant Applied Torque [N-m]
+w_0 = [0,10]; % Initial Angular Velocity 
+J = [.01,100]; % Rotational Inertia 
+b = [.1,10]; % Damping Coefficient
+A = [0,100]; % Constant Applied Torque 
 dT = [.001,.1,1];
-sin_var = [0,1]; %Sinusoid indicator. 0 = step 1 = sin
+sin_var = [0,1]; 
 switch_value = 0;
-freq_var = [.1,100]; %Frequencies
+freq_var = [.1,100]; 
 freq = 1;
 w_0_var = 0;
 J_var = 0;
