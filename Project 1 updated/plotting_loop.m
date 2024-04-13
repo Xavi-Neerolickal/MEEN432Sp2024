@@ -1,8 +1,10 @@
-
+% Calling function to do the calculation using the particular ODE 4
 
 [cpu_ode4_001,error_ode4_001] = fixedstep("ode4",".001",w_0,J,b,A,sin_var,freq_var);
 [cpu2_ode4_01,error_ode4_01] = fixedstep("ode4",".1",w_0,J,b,A,sin_var,freq_var);
 [cpu3_ode4_1,error_ode4_1] = fixedstep("ode4","1",w_0,J,b,A,sin_var,freq_var);
+
+% Plotting figures 
 
 figure(1)
 cpu = [cpu_ode4_001',cpu2_ode4_01',cpu3_ode4_1'];
@@ -25,10 +27,12 @@ xlabel("Cpu time")
 ylabel("Max Error")
 title("Ode 4 Error vs CPU time")
 
-% ode 1
+% Calling function to do the calculation using the particular ODE 1
 [cpu_ode1_001,error_ode1_001] = fixedstep("ode1",".001",w_0,J,b,A,sin_var,freq_var);
 [cpu2_ode1_01,error_ode1_01] = fixedstep("ode1",".1",w_0,J,b,A,sin_var,freq_var);
 [cpu3_ode1_1,error_ode1_1] = fixedstep("ode1","1",w_0,J,b,A,sin_var,freq_var);
+
+% Plotting figures 
 
 figure(4)
 cpu = [cpu_ode1_001',cpu2_ode1_01',cpu3_ode1_1'];
@@ -51,9 +55,12 @@ xlabel("Cpu time")
 ylabel("Max Error")
 title("Ode 1 Error vs CPU time")
 
+% Calling function to do the calculation using the particular ODE 45
 
 % ode 45
 [cpu,error] = variabletime("ode45",w_0,J,b,A,sin_var,freq_var);
+
+% Plotting figures 
 
 figure(7)
 scatter(cpu,error)
@@ -71,7 +78,7 @@ xlabel("Cpu time")
 ylabel("Max Error")
 title("Ode23tb Error vs CPU time")
 
-% function for fixed step
+% for loop function for fixed step solution
 function [cpu,error] = fixedstep(solver,stepsize,w_0,J,b,A,sin_var,freq_var)
     cpu = [];
     error = [];
@@ -152,7 +159,7 @@ function [cpu,error] = fixedstep(solver,stepsize,w_0,J,b,A,sin_var,freq_var)
 end
 
 
-% function for variable time
+% for loop function for variable step solution
 function [cpu,error] = variabletime(solver,w_0,J,b,A,sin_var,freq_var)
     cpu = [];
     error = [];
@@ -233,7 +240,7 @@ function [cpu,error] = variabletime(solver,w_0,J,b,A,sin_var,freq_var)
    
 end
 
-%Math model for step input.
+% modelling angular velocity with the given variables
 function [angular_v] = model(b_var,J_var,T_0,t,w_0_var)
     angular_v = T_0/b_var*(1-exp(-b_var*t/J_var))+w_0_var*exp(-b_var*t/J_var);
 end
