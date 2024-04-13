@@ -9,23 +9,24 @@
 figure(1)
 cpu = [cpu_ode4_001',cpu2_ode4_01',cpu3_ode4_1'];
 scatter(dT,cpu)
-legend
+title("Ode 4 Cpu vs Step Size")
 xlabel("Step Size (dT)")
 ylabel("Cpu Time")
-title("Ode 4 Cpu vs Step Size")
+legend
 
 figure(2)
 error = [error_ode4_001',error_ode4_01',error_ode4_1'];
 scatter(dT,error)
+title("Ode 4 Error vs Step Size")
 xlabel("Step Size (dT)")
 ylabel("Max Error")
-title("Ode 4 Error vs Step Size")
+
 
 figure(3)
 scatter(cpu,error)
+title("Ode 4 Error vs CPU time")
 xlabel("Cpu time")
 ylabel("Max Error")
-title("Ode 4 Error vs CPU time")
 
 % Calling function to do the calculation using the particular ODE 1
 [cpu_ode1_001,error_ode1_001] = fixedstep("ode1",".001",w_0,J,b,A,sin_var,freq_var);
@@ -37,23 +38,24 @@ title("Ode 4 Error vs CPU time")
 figure(4)
 cpu = [cpu_ode1_001',cpu2_ode1_01',cpu3_ode1_1'];
 scatter(dT,cpu)
-legend
+title("Ode 1 Cpu vs Step Size")
 xlabel("Step Size")
 ylabel("Cpu Time")
-title("Ode 1 Cpu vs Step Size")
+legend
 
 figure(5)
 error = [error_ode1_001',error_ode1_01',error_ode1_1'];
 scatter(dT,error)
+title("Ode 1 Error vs Step Size")
 xlabel("Step Size")
 ylabel("Max Error")
-title("Ode 1 Error vs Step Size")
+
 
 figure(6)
 scatter(cpu,error)
+title("Ode 1 Error vs CPU time")
 xlabel("Cpu time")
 ylabel("Max Error")
-title("Ode 1 Error vs CPU time")
 
 % Calling function to do the calculation using the particular ODE 45
 
@@ -64,9 +66,10 @@ title("Ode 1 Error vs CPU time")
 
 figure(7)
 scatter(cpu,error)
+title("Ode45 Error vs CPU time")
 xlabel("Cpu time")
 ylabel("Max Error")
-title("Ode45 Error vs CPU time")
+
 
 
 % ode 23tb
@@ -74,9 +77,9 @@ title("Ode45 Error vs CPU time")
 
 figure(8)
 scatter(cpu,error)
+title("Ode23tb Error vs CPU time")
 xlabel("Cpu time")
 ylabel("Max Error")
-title("Ode23tb Error vs CPU time")
 
 % for loop function for fixed step solution
 function [cpu,error] = fixedstep(solver,stepsize,w_0,J,b,A,sin_var,freq_var)
