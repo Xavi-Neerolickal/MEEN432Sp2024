@@ -1,0 +1,10 @@
+We took notes down during the office hours to troubleshoot and fix up our code and simulink. 
+1) We ended up fixing the track by making adjustments to the x and y coordinates. The track has been transformed by 500 units of x to the right. This track was also added our Projecr2_final file so that the car is displayed being driven on the track. 
+2) We fixed the driver sub-system in the simulink by changing the wheelbase of the car. The "L" variable within the driver sub-system has been set to "L=lf+lr" to reflect the length of the wheelbase of the vehicle
+3) We also adjusted and found the optimum velocity so that the car is able to drive around the track without going out of bounds
+
+Running the code:
+Download all the files
+1) Run the init2.m code file.
+2) Run the track.m code file.
+3) Run the Project2_Final.m
