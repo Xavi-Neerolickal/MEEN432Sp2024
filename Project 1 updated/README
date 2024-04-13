@@ -1,0 +1,8 @@
+We modelled the torque applied and figured why we had to use matrix multiplication last time. We made the change. We also figured out how to read data using the simout function, which was the major issue we ran into.
+Having read the simout function, we modelled the errors and plotted them as specified. Knowing when to use arrays vs. double values was a crucial step in finishing up part one of the project. 
+
+To run part one;
+1. Download all files
+2. Run init file
+3. Run the plotting_loop file which contains the loop logic in functions and the plotting logic before that
+
