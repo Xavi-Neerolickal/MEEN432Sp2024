@@ -6,3 +6,5 @@ To run part one;
 2. Run init file
 3. Run the plotting_loop file which contains the loop logic in functions and the plotting logic before that
 
+Running part two should be as usual. 
+Download Project1_Part2_matlab and Project1_part2.slx and run them. We chose option 2 where we combined the two shafts by combining their equations and writing a single new model which consists of the combined inertia and samping of the two individual systems.
