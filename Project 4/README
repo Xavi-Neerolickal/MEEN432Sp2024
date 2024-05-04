@@ -1,0 +1,18 @@
+To run:
+
+Run the init files, the simulink and then the MATLAB file. 
+
+Issues: The violation for regenerative breaking still stays true for any speed > 5. I tried a linear equation
+of line, however, that caused the breaking to completely fail and the car went off track, with high speeds
+and started making loops near the curves. Hence, we kept the regeneraative breaking to a faulty code 
+that does not really work. This is evident in how we have phrased the code right now so that it works 
+in every other criteria.
+
+Sucesses: The max SOC is 90% and the min SOC is around 60% which is above 10%. We used a 1 speed transmission
+and the car runs 20 loops around the track in 60 mins. We have tried to incorporate raceStat and 
+simulation into the MATLAB function. 
+
+P.S: This mightve been the issue with our linear equation: We tried getting a positive slope when it should've
+been negative. I did not add that code in the submission since it kept crashing our entire code. 
+
+Thank you for all your help throughout the semester!
