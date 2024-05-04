@@ -1,5 +1,5 @@
 
-simout = sim("Project_4.slx","Stoptime",string(3600));
+simout = sim("Project_4_Simulink.slx","Stoptime",'3600');
 X = simout.X.signals.values;
 Y = simout.Y.signals.values;
 t = simout.X.time;
@@ -7,7 +7,7 @@ path.width = 15;
 path.l_st = 900;
 path.radius = 200;
 %out = out.SOC.signals.values;
-simout_2 = sim("Project_4.slx",'StopTime','3600');
+simout_2 = sim("Project_4_Simulink.slx",'StopTime','3600');
 
 stats = raceStat(X,Y,t,path,simout_2);
 
